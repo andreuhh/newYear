@@ -1,3 +1,31 @@
+document.addEventListener('DOMContentLoaded', function (event) { // serve per evitare il flicker
+    window.addEventListener('load', function (e) {
+
+        document.body.style.display = 'block';
+
+        var tl = new TimelineMax();
+
+        tl.staggerFrom('.titleCont', .6, {
+            opacity: 0,
+            scale: .5,
+            ease: Power2.easeOut
+		}, 0.2)
+		
+		tl.staggerFrom('h1', .8, {
+            opacity: 0,
+            scale: .5,
+            ease: Power2.easeOut
+		}, 0.2)
+
+		tl.staggerFrom('.imgCont', .9, {
+            opacity: 0,
+            scale: .5,
+            ease: Power2.easeOut
+		}, 0.2)
+
+    }, false);
+});
+
 var scene = new THREE.Scene();
 
 var camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000)
