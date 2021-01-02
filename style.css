@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+canvas {
+  /*width: 100%;
+  height: 100%;*/
+  display: block;
+}
+
+.titleCont {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: linear-gradient(0deg, rgba(130, 204, 123, 1) 0%, rgba(248, 203, 69, 1) 100%);
+  border-radius: 20px;
+  padding: .2em;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #2f2f2f;
+  /*margin: 0 auto;*/
+  font-family: 'Montserrat';
+  font-size: 6em;
+  text-transform: uppercase;
+  width: auto;
+  line-height: .8em;
+  font-family: 'Russo One', sans-serif;
+
+
+}
+
+.imgCont {
+  background-image: url(logos2ismall.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 353px;
+  height: 77px;
+  z-index: 999;
+
+}
+
+@media screen and (max-width: 414px) {
+  .titleCont {
+    width: 95%;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
